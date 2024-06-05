@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost";
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    position:absolute;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav a{
+    margin:20px 20px 0 0;
+    
+}
+
+nav img{
+    width: 20px;
+    border: 15px solid white;
+    border-radius: 50px;
+
+}
+
+header{
+    background-color: #2600ff;
+
+    background-size:contain;
+    background-position: bottom;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../src/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 50%;
+    position:relative;
+}
+
+.presentation{
+    background-color: #fff;
+    margin-top: -6%;
+    padding: 1%;
+    padding-top: 9%;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.presentation h1, p {
+    width: 85%;
+    margin: auto;
+}
+.presentation p{
+    color: #999;
+    font-size: 15px;
+}
+
+.practics{
+    margin-top: 50px;
+    font-family: monospace;
+    width: 90%;
+    margin: auto;
+}
+
+.conteiner_practics{
+    background-color: #00061d;
+    margin: auto;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.conteiner_practics li{
+    margin:10px;
+    color: #fff;
+}
+
+.tittle_practics{
+    background: rgb(92, 92, 92);
+    background-color: #12151f;
+    color: rgb(238, 238, 238);
+    padding: 1%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    letter-spacing: 2px;
+}
+
+.conteiner_practics a{
+    color: rgb(208, 207, 207);
+}
+
+.conteiner_practics a:visited{
+    color: rgb(137, 146, 145);
+}
+
+
+
+.conteiner{
+    background: transparent;
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.title_note{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.itms_list{
+    font-weight:lighter;
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    display: inline-flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.itms_list div{
+    margin: auto;
+}
+
+.conteiner_note{
+    width: 25%;
+    height: 20%;
+    padding: 1.7%;
+    border-radius: 15px;
+    margin: 0 1%;
+    box-shadow: 10px 10px 10px #0001;
+}
+
+table,td,th{
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+table{
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+td, th{
+    padding: 10px;
+}
+
+.Mt_BD{
+    background-color: #fddcffa3;
+}
+
+.Mt_FI{
+    background-color: #ffd19f;
+}
+
+.Mt_SO{
+    background-color: #dddfef;
+}
+
+.Mt_EN{
+    background-color: #f7979a;
+}
+
+.Mt_AW{
+    background-color: #90cdeb;
+}
+
+.Mt_PE{
+    background-color: #47a5d4;
+}
+
+
+.Mt_CD{
+    background-color: #45db83;
+}
+
+.Mt_IT{
+    background-color: #b8b8b8;
+}
