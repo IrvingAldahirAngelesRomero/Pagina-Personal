@@ -1,19 +1,25 @@
 
+body{
+    margin: 0;
+    font-family:'Century Gothic' ;
+}
 .contenedor{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos en X */
-    justify-content: center;/* Centra los elementos en Y */
-    height: 100vh; /* Para ocupar el 100% real de la pantalla  */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
     background-color: #007C91;
     color: #fff;
-    padding: 10px; ; /*padding: para hacer separaciónes internas*/
+    padding: 10px; 
     border-radius: 5px;
+    padding-bottom:5%;
+
 }
 
 .titulo{
     font-size: 50px;
-    margin-bottom: 20px; /*margin: para hacer separaciónes externas*/
+    margin-bottom: 20px;
     text-align: center;
     font-weight: bolder;
 }
@@ -26,19 +32,32 @@
 
 input{
     width: 95%;
-    padding: 10px;
-    margin: 15px;
+    padding: 1.5%;
+    margin: 2%;
     border-width: 2px solid #ccc;
     border-radius: 7px;
+    font-weight: 800;
+    text-align: center;
 }
 
 button{
-    padding: 10px;
-    margin: 15px;
+    padding: 1.5%;
+    margin: 2%;
     width: 95%;
     background-color: #4cb2c9;
     border: none;
     border-radius: 7px;
-    cursor: pointer; /*Para cambiar el tipo del cursor*/
+    cursor: pointer;
     color: #fff;
+}
+
+.botonera{
+    display: flex;
+    width: 100%;
+}
+
+@media(max-width:768px){   /*Estilo secundario*/
+    .botonera{
+        flex-direction: column;
+    }
 }
