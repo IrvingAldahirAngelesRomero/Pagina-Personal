@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="javascript/validacion.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica de validación</h1>
+        <h2 class="subtitle">Registro de Usuarios</h2>
+
+        <form action="" method="get">
+
+            <label for="numeroTrabajador">Numero de trabajador</label>
+            <input class="input" type="number" 
+            placeholder="Numero de trabajador"
+            name="numeroTrabajador" id="numeroTrabajador" required>
+
+            <label for="name">Nombre de usuario:</label>
+            <input type="text" class="input" required placeholder="Nombre" maxlength="25">
+
+            <label for="app"> Apellido paterno:</label>
+            <input type="text" class="input" required placeholder="Apellido paterno" maxlength="25">
+
+            <label for="apm"> Apellido materno:</label>
+            <input type="text" class="input" required placeholder="Apellido materno" maxlength="25">
+
+            <label for="edad"> Edad:</label>
+            <input type="number" class="input" required placeholder="Edad" min="18" max="99"><!--step="4"-->
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="input" required maxlength="50" placeholder="Email">
+
+            <label for="pass">Password</label>
+            <input type="password" class="input" minlength="8" maxlength="20" placeholder="Password" name="pass" id="pass">
+
+            
+            <label for="pass2">confirma tu Password</label>
+            <input type="password" class="input" minlength="8" maxlength="20" placeholder="Password" name="pass2" id="pass2">
+            
+            <input type="submit" class="button"  onclick="validaPass()">
+        </form>
+    </div>
+</body>
+</html>
