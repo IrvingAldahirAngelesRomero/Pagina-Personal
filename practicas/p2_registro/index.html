@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
     <link rel="stylesheet" href="estilos/estilos.css">
     <script src="javascript/validacion.js"></script>
-    <title>Registro</title>
 </head>
+
 <body>
     <div class="container">
-        <h1 class="title">Practica de validación</h1>
-        <h2 class="subtitle">Registro de Usuarios</h2>
-
         <form action="" method="get">
-
-            <label for="numeroTrabajador">Numero de trabajador</label>
-            <input class="input" type="number" 
-            placeholder="Numero de trabajador"
-            name="numeroTrabajador" id="numeroTrabajador" required>
-
+            <h2 class="subtitile">Registro de usuarios</h2>
+            
             <label for="name">Nombre de usuario:</label>
-            <input type="text" class="input" required placeholder="Nombre" maxlength="25">
-
-            <label for="app"> Apellido paterno:</label>
-            <input type="text" class="input" required placeholder="Apellido paterno" maxlength="25">
-
-            <label for="apm"> Apellido materno:</label>
-            <input type="text" class="input" required placeholder="Apellido materno" maxlength="25">
-
-            <label for="edad"> Edad:</label>
-            <input type="number" class="input" required placeholder="Edad" min="18" max="99"><!--step="4"-->
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" class="input" required maxlength="50" placeholder="Email">
-
-            <label for="pass">Password</label>
-            <input type="password" class="input" minlength="8" maxlength="20" placeholder="Password" name="pass" id="pass">
-
+            <input type="text" class="input" maxlength="15" pattern="[A-Za-z0-9]{5,15}" title="Debe ingresar su nombre de usuario en la caja de texto" placeholder="Nombre del usuario"  required >
             
-            <label for="pass2">confirma tu Password</label>
-            <input type="password" class="input" minlength="8" maxlength="20" placeholder="Password" name="pass2" id="pass2">
+            <label for="pass">Contraseña:</label>
+            <input type="password" class="input" minlength="8"  maxlength="15"
+                name="pass" id="pass" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#\$%\*]).{8,15}$" placeholder="Contraseeña" required  title="Su contraseña debe tener l menos 8 caracteres, incluyendo al menos una letra mayúscula, una minúscula, un número y un carácter especial (!, @, #, etc.)." >
             
-            <input type="submit" class="button"  onclick="validaPass()">
+            <label for="pass2">Confirmar Contraseeña:<label>
+            <input type="password" class="input" minlength="8" maxlength="20" placeholder="Confirmar Contraseeña"
+name="pass2" id="pass2" required title="Su contraseña debe coincidir con la creada">
+            
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" id="email" class="input" placeholder="Correo electronico" required title="El correo electronico debe ser valido" >
+            
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" class="input" placeholder="Telefono en formato +XX XXXXXXXXXX..." maxlength="15" pattern="\+[0-9]{1,3} [0-9]{10,14}" required title="Debe colocar primeramente un símbolo más (+) seguido del código de país, el código de ciudad y el número de teléfono local.">
+            
+            <label for="fechaNac">Fecha de nacimiento:</label>
+            <input type="text" id="fechaNac" name="fechaNac" class="input" required pattern="^(?:\d{4}-\d{1,2}-\d{1,2})$" placeholder="Ingrese la fecha en formato YYYY-MM-DD" title="Coloque su fecha en el siguiente formato año,mes,dia">
+            
+            <label for="CP">Código Postal:</label>
+            <input type="text" id="CP" name="CP" class="input" placeholder="Código Postal" pattern="[0-9]{5}" required title="Coloque el codigo postal del estado en el reside" >
+            
+            <input type="submit" class="button" onclick="validaPass()">
         </form>
     </div>
 </body>
+
 </html>
