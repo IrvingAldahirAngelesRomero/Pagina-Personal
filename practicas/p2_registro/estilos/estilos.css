@@ -38,7 +38,7 @@ body{
     border: 3px solid red;
     background-color: rgb(255, 213, 220);
 }
-
+ 
 .input:valid {
     border: 3px solid darkgreen;
     background-color: rgb(178, 255, 227);
